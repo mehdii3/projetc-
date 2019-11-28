@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>promotions</class>
+ <widget class="QDialog" name="promotions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_ajouterpromo">
+   <property name="geometry">
+    <rect>
+     <x>1184</x>
+     <y>102</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>470</y>
+     <width>931</width>
+     <height>271</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_afficher">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>560</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Afficher</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>620</y>
+     <width>69</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>datedebut</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>datefin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>taux</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>620</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>trier selon</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_rechercherpro">
+   <property name="geometry">
+    <rect>
+     <x>1184</x>
+     <y>292</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_rechercheid">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>180</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_pourmodifier">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>230</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>620</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Update</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineedit_idpromo">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>150</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_taux">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>270</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit_datedebutpro">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>270</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit_finpromo">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>140</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>768</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/gestionpromotions.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_supprimerpro">
+   <property name="geometry">
+    <rect>
+     <x>1184</x>
+     <y>362</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_affectepro">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>650</y>
+     <width>221</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Affecter une promotion a un vol</string>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>pushButton_ajouterpromo</zorder>
+  <zorder>tableView</zorder>
+  <zorder>pushButton_afficher</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>label</zorder>
+  <zorder>pushButton_rechercherpro</zorder>
+  <zorder>lineEdit_rechercheid</zorder>
+  <zorder>pushButton_pourmodifier</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>lineedit_idpromo</zorder>
+  <zorder>lineEdit_taux</zorder>
+  <zorder>dateEdit_datedebutpro</zorder>
+  <zorder>dateEdit_finpromo</zorder>
+  <zorder>pushButton_supprimerpro</zorder>
+  <zorder>pushButton_affectepro</zorder>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>74833421_463672121021295_7431613931249991680_n.jpg</file>
+        <file>78851020_2725902970969998_8810818661179719680_n.jpg</file>
+        <file>../../Downloads/74217842_1026617407684361_1400118106809958400_n.png</file>
+        <file>ajout.png</file>
+        <file>rechercher.png</file>
+        <file>supprimer.png</file>
+        <file>modifier.png</file>
+    </qresource>
+</RCC>

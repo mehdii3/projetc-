@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Add client 2.png</file>
+        <file>add client1.png</file>
+        <file>client fidel1.png</file>
+        <file>Clientdifel.jpg</file>
+        <file>contact.png</file>
+        <file>Reclamation.png</file>
+        <file>ressources.qrc</file>
+        <file>stat.png</file>
+        <file>Back.png</file>
+        <file>gestion clients.png</file>
+        <file>fidel.png</file>
+    </qresource>
+</RCC>

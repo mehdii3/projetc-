@@ -1,28 +1,21 @@
-#include "mainwindow.h"
+#include "widget.h"
 #include <QApplication>
-#include <QMessageBox>
-#include "connexion.h"
-#include <QString>
-#include <QtDebug>
-
+#include<connection.h>
+#include<QtDebug>
+#include"sos.h"
 int main(int argc, char *argv[])
-{  QApplication a(argc, argv);
-    QApplication::setStyle("plastique");
-    Connexion c;
+{
+    QApplication a(argc, argv);
 
-  bool test=c.ouvrirConnexion();
-  MainWindow w;
-  if(test)
-  {w.show();
+    Connection c;
+    if(c.createconnect())
+        qDebug()<<"database connected";
+    sos s;
+    s.show();
 
-      QMessageBox::critical(nullptr, QObject::tr("database is not open"),
-                  QObject::tr("connection avec succés.\n"
-                              "Click Cancel to exit."), QMessageBox::Cancel);
 
-  }
-  else
-      QMessageBox::critical(nullptr, QObject::tr("database is not open"),
-                  QObject::tr("connection failed.\n"
-                              "Click Cancel to exit."), QMessageBox::Cancel);
+    //Widget w;
+   // w.show();
 
-    return a.exec();}
+    return a.exec();
+}

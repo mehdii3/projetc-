@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = ProjetAmine
 TEMPLATE = app
@@ -36,7 +36,9 @@ SOURCES += \
     connexion.cpp \
     modifier.cpp \
     classprormo.cpp \
-    affecterpro.cpp
+    affecterpro.cpp \
+    statistiques.cpp \
+    qcustomplot.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -49,7 +51,10 @@ HEADERS += \
     connexion.h \
     modifier.h \
     classprormo.h \
-    affecterpro.h
+    affecterpro.h \
+    statistiques.h \
+    qcustomplot.h
+
 
 FORMS += \
         mainwindow.ui \
@@ -59,7 +64,8 @@ FORMS += \
     afficher_vols.ui \
     promotions.ui \
     modifier.ui \
-    affecterpro.ui
+    affecterpro.ui \
+    statistiques.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

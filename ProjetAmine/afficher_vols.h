@@ -30,6 +30,8 @@ private slots:
     void on_comboBox_activated(const QString &arg1);
 
 
+    void on_lineEdit_saisiid_textChanged(const QString &arg1);
+
 private:
     Ui::afficher_vols *ui;
     vol tmpvol;

@@ -10,6 +10,10 @@ ajouter_un_vol::ajouter_un_vol(QWidget *parent) :
     ui->setupUi(this);
     QDate d;
     ui->dateEdit->setDate(d.currentDate());
+    QRegExp rx ("[A-Za-z]+");
+    ui->lineEdit_destination->setValidator(new QRegExpValidator(rx,this));
+   ui->lineEdit_depart->setValidator(new QRegExpValidator (rx,this));
+
 }
 
 ajouter_un_vol::~ajouter_un_vol()

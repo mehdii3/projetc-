@@ -315,7 +315,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_stat">
+  <widget class="QPushButton" name="pushButton_stats">
    <property name="geometry">
     <rect>
      <x>760</x>
@@ -366,7 +366,7 @@
   <zorder>label_3</zorder>
   <zorder>pushButton_gestionsvols</zorder>
   <zorder>pushButton_promotions</zorder>
-  <zorder>pushButton_stat</zorder>
+  <zorder>pushButton_stats</zorder>
  </widget>
  <resources>
   <include location="images.qrc"/>

@@ -5,6 +5,8 @@
 #include "mainwindow.h"
 #include "dialog2.h"
 #include "promotions.h"
+#include "statistiques.h"
+
 
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent),
@@ -37,4 +39,15 @@ void Dialog::on_pushButton_promotions_clicked()
 {
     promotions p;
     p.exec();
+}
+
+
+
+
+
+
+void Dialog::on_pushButton_stats_clicked()
+{
+    statistiques s;
+    s.exec();
 }

@@ -126,7 +126,19 @@ void promotions::on_pushButton_clicked()
 void promotions::on_pushButton_supprimerpro_clicked()
 {
     QString id =ui->lineEdit_rechercheid->text();
+    QSqlQuery query;
+    QSqlQuery query_promo2;
+    query.prepare("UPDATE vols set taux=:taux where idpromo=:idpromo");
+    query.bindValue(":taux",0);
+    query.bindValue(":idpromo",id);
+    query.exec();
     bool test=tmppromo.supprimer(id);
+
+   query_promo2.prepare("UPDATE vols set idpromo=:idpromo where taux=:taux");
+   query_promo2.bindValue(":taux",NULL);
+   query_promo2.bindValue(":idpromo","");
+   query_promo2.exec();
+
     if(test)
     ui->tableView->setModel(tmppromo.afficher());
 }

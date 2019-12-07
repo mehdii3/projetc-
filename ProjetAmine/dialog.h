@@ -24,6 +24,10 @@ void on_pushButton_gestionsvols_clicked();
 
 void on_pushButton_promotions_clicked();
 
+void on_pushButton_stat_clicked();
+
+void on_pushButton_stats_clicked();
+
 private:
     QPushButton *m_bouton;
     Ui::Dialog *ui;

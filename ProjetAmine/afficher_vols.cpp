@@ -21,18 +21,13 @@ void afficher_vols::on_pushButton_afficher_clicked()
 
 void afficher_vols::on_Supprimer_clicked()
 {
-    QString id =ui->lineEdit_saisiid->text();
-    bool test=tmpvol.supprimer(id);
+
+    ui->tableView->currentIndex();
+    bool test=tmpvol.supprimer(ui->tableView->model()->data(ui->tableView->currentIndex()).toString());
     if(test)
     ui->tableView->setModel(tmpvol.afficher());
 }
 
-void afficher_vols::on_pushButton_rechercher_clicked()
-{
-    vol v;
-    QString id =ui->lineEdit_saisiid->text();
-    ui->tableView->setModel(tmpvol.afficher2(id));
-}
 
 /*void afficher_vols::on_comboBox_activated(const QString &arg1)
 {
@@ -69,13 +64,22 @@ model->setQuery("select * from vols order by ID");
         model->setQuery("select * from vols order by nb_place");
     if(arg1=="heur")
          model->setQuery("select * from vols order by dateheur");
-
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("nb_place"));
-    model->setHeaderData(2, Qt::Horizontal, QObject::tr("destination"));
-    model->setHeaderData(3, Qt::Horizontal, QObject::tr("dateheur"));
-    model->setHeaderData(5, Qt::Horizontal, QObject::tr("taux"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("duree"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("taux"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("destination"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("etat"));
+    model->setHeaderData(6, Qt::Horizontal, QObject::tr("depart"));
+    model->setHeaderData(7, Qt::Horizontal, QObject::tr("dateheur"));
+
+
 
     ui->tableView->setModel(model);
 }
 
+
+void afficher_vols::on_lineEdit_saisiid_textChanged(const QString &arg1)
+{
+    QString id =ui->lineEdit_saisiid->text();
+    ui->tableView->setModel(tmpvol.afficher2(id));
+}

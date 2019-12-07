@@ -79,10 +79,15 @@ query.exec();
 model->setQuery(query);
 
 
-model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
 model->setHeaderData(1, Qt::Horizontal, QObject::tr("nb_place"));
-model->setHeaderData(2, Qt::Horizontal, QObject::tr("destination"));
-model->setHeaderData(3, Qt::Horizontal, QObject::tr("dateheur"));
+model->setHeaderData(2, Qt::Horizontal, QObject::tr("duree"));
+model->setHeaderData(3, Qt::Horizontal, QObject::tr("taux"));
+model->setHeaderData(4, Qt::Horizontal, QObject::tr("destination"));
+model->setHeaderData(5, Qt::Horizontal, QObject::tr("etat"));
+model->setHeaderData(6, Qt::Horizontal, QObject::tr("depart"));
+model->setHeaderData(7, Qt::Horizontal, QObject::tr("dateheur"));
+
+
     return model;
     
     

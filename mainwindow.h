@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "reservation.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -16,30 +16,27 @@ public:
     ~MainWindow();
 
 private slots:
+    void on_pb_ajouter_clicked();
 
+    void on_pb_supprimer_clicked();
 
-    void on_ajouter_clicked();
+    void on_tabetudiant_doubleClicked(const QModelIndex &index);
 
-    void on_modifier_clicked();
+    void on_tabetudiant_activated(const QModelIndex &index);
 
-    void on_supprimer_clicked();
+    void on_Modifier_clicked();
 
-    void on_afficher_clicked();
+    void on_lineEdit_textChanged(const QString &arg1);
 
-    void on_pushButton_6_clicked();
+    void on_recherche_textEdited(const QString &arg1);
+    void Mise_plot();
 
-    void on_trier_clicked();
 
     void on_pushButton_clicked();
 
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_3_clicked();
-
-    void on_gererdepot_clicked();
-
 private:
     Ui::MainWindow *ui;
+    reservation tmpreservation;
 };
 
 #endif // MAINWINDOW_H
